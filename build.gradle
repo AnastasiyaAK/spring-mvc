@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'war'
 }
 
 group = 'by.akulich'
@@ -20,6 +21,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.20")
     compileOnly("javax.servlet:javax.servlet-api:4.0.1")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.2")
+    implementation("org.postgresql:postgresql:42.6.0")
 }
 
 test {

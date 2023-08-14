@@ -11,6 +11,7 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("by.akulich.gcs")
 public class SpringConfig {
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
